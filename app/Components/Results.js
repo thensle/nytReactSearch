@@ -1,15 +1,7 @@
 // Include React
 var React = require("react");
 
-// Sub-components
-var Saved = require("./Saved");
-var Search = require("./Search");
-
-// Helper for making AJAX requests to our API
-// var helpers = require("./utils/helpers");
-
-// Creating the Main component
-var Main = React.createClass({
+var Results = React.createClass({
 
   // Here we set a generic state associated with the number of clicks
   // Note how we added in this history state variable
@@ -62,43 +54,12 @@ var Main = React.createClass({
   // Here we render the function
   render: function() {
     return (
-      <div>
-        <nav className="navbar navbar-inverse navbar-fixed-top">
-          <div className="container">
-            <div className="navbar-header">
-              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span className="sr-only">Toggle navigation</span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-              </button>
-            </div>
-          </div>
-        </nav>
-
-      <div className="jumbotron">
-        <div className="container">
-          <h1>New York Times Article Search Engine</h1>
-          <em>Search for articles in the New York Times, Save, and Make Notes for Future Personal Use!</em>
-        </div>
-      </div>
-
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <Search />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-12">
-            <Saved />
-          </div>
-        </div>
-      </div>
-      </div>
+    	<div>
+    		<p>Panel Content</p>
+    	</div>
     );
   }
 });
 
 
-module.exports = Main;
+module.exports = Results;
